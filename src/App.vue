@@ -16,12 +16,12 @@ const prevPage = () => {
   }
 </script>
 <template>
-    <main class="plus-jakarta-sans-global min-h-screen bg-gradient-to-b from-brand-600 to-brand-950 text-brand-50 overflow-x-hidden">
+    <main class=" min-h-screen bg-gradient-to-b from-brand-600 to-brand-950 text-brand-50">
         <RouterView />
         <div class="fixed right-0 top-1/2 bottom-1/2 translate-y-1/2">
           <div class="w-8 flex flex-col gap-3">
-            <ArrowUp @click="prevPage" />
-            <ArrowDown @click="nextPage"  />
+            <ArrowUp @click="prevPage" class="w-13" />
+            <ArrowDown @click="nextPage" class="w-13" />
           </div>
         </div>
     </main>
@@ -47,5 +47,4 @@ const prevPage = () => {
   }
 
 </style>
-
 
