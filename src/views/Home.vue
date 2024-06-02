@@ -21,7 +21,6 @@ const welcome = () => {
   ]
   timeline(sequence, { duration: 2, delay: .3 })
 }
-
 onMounted(() => {
   welcome()
 })
