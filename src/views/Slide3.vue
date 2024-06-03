@@ -10,6 +10,9 @@ const anim = () => {
             '.title', {
                 opacity: [0, 1],
                 scale: [.8, 1],
+            },
+            {
+                duration:1
             }
         ],
         [
@@ -17,13 +20,18 @@ const anim = () => {
                 opacity: [0, 1],
                 scale: [.8, 1],
             }, {
-                delay: 1
+                delay: 1,
+                duration:2
             }
 
         ],
         [
             '.titik',
-            {opacity:[0, 1]}
+            {
+                opacity:[0, 1]
+            },{
+                duration: 3
+            }
         ],
         [
             '.pulse',
@@ -32,9 +40,8 @@ const anim = () => {
                 scale: [1, 1.2],
             },
             {
-                duration: 1,
+                duration: 2,
                 repeat: Infinity,
-                delay: stagger(0.9),
             }
         ]
     ]
@@ -51,8 +58,8 @@ onMounted(() => {
             <p class="text">guna memberikan pengalaman pembayaran terbaik bagi pelanggan Anda. Terima kasih atas
                 perhatian dan waktu Anda.</p>
                 <div class="relative flex justify-center items-center ">
-                    <div class="titik absolute z-20 w-5 h-5 rounded-full bg-brand-300 cursor-pointer"></div>
-                    <Bullet class="pulse animate-ping  w-10 h-10" />
+                    <div class="titik absolute z-20 w-10 h-10 flex items-center justify-center rounded-full bg-orange-500 cursor-pointer" @click="$router.push({name:'Slide 4'})"> Go </div>
+                    <Bullet class="pulse animate-ping  w-12 h-12" />
                 </div>
            
         </div>
