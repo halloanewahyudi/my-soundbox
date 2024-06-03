@@ -2,6 +2,7 @@
 import { animate, timeline } from "motion";
 import { onMounted } from "vue"
 import BigTitle from '../components/BigTitle.vue'
+import ArrowRight from "../components/icons/ArrowRight.vue";
 import Check from "../components/icons/Check.vue";
 
 const animSlide4 = () => {
@@ -45,6 +46,8 @@ onMounted(()=>{
                                 untuk memudahkan transaksi.
                             </li>
                         </ul>
+                        <router-link to="/slide-5" class="btn-light flex items-center gap-2 mt-6 max-w-max group lg:float-end"> GO <ArrowRight class="group-hover:translate-x-2 duration-300" /> </router-link>
+                      
                     </div>
                 </div>
             </div>
