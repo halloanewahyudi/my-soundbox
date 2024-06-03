@@ -51,7 +51,7 @@ body {
 
 p {
   line-height: 160%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   letter-spacing: 1.5px;
   font-weight: 300;
   font-size: larger;
