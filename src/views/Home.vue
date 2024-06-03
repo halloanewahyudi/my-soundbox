@@ -1,6 +1,8 @@
 <script setup>
 import { animate, timeline } from 'motion';
 import { onMounted, ref } from 'vue';
+import ArrowRight from '../components/icons/ArrowRight.vue';
+
 const title = ref(null)
 const text = ref(null)
 const device = ref(null)
@@ -16,8 +18,10 @@ const welcome = () => {
     [text.value, { opacity: [0, 1], y: [100, 0] }],
     [
       '.device', { opacity: [0, 1], scale: [.2, 1] }
+    ],
+    [
+      '.btn-light', { opacity: [0, 1], x: [-100, 1] }
     ]
-
   ]
   timeline(sequence, { duration: 2, delay: .3 })
 }
@@ -36,6 +40,7 @@ onMounted(() => {
             meningkatkan efisiensi dan keamanan transaksi bisnis Anda, serta memberikan pengalaman pembayaran terbaik
             bagi pelanggan Anda.
           </p>
+          <router-link to="/slide-1" class="btn-light flex items-center gap-2 max-w-max group"> GO <ArrowRight class="group-hover:translate-x-2 duration-300" /> </router-link>
         </div>
         <div class="md:pt-10">
           <img class="device" src="../assets/img/device.png" alt="">

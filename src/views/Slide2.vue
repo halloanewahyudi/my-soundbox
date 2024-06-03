@@ -2,9 +2,14 @@
 import Slide from '../components/template/Slide.vue';
 import BigTitle from '../components/BigTitle.vue';
 import bgImage from '@/assets/img/transaction.png'
+import { timeline, stagger, animate } from 'motion';
+import { onMounted } from 'vue';
+onMounted(() => {
+  animate('.slide-2', { opacity:[0,1], x:[100,0] }, { duration: 1})
+})
 </script>
 <template>
-  <transition name="slide-fade">
+  <div class="slide-2">
   <slide :bg="bgImage">
     <div class="flex flex-col gap-6">
       <BigTitle class="anim" title="Dalam presentasi ini, kami akan membahas berbagai aspek dari QRIS Soundbox" />
@@ -13,7 +18,7 @@ import bgImage from '@/assets/img/transaction.png'
       </p>
     </div>
   </slide>
-  </transition>
+</div>
 </template>
 <style>
 /*

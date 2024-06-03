@@ -34,6 +34,15 @@ const routes = [
     component:()=>import('../views/Slide3.vue'),
     meta: {
       prev: 'Slide 2',
+      next: 'Slide 4'
+    }
+  },
+  {
+    path: '/slide-4',
+    name: 'Slide 4',
+    component:()=>import('../views/Slide4.vue'),
+    meta: {
+      prev: 'Slide 3',
       next: ''
     }
   }

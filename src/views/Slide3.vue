@@ -22,6 +22,10 @@ const anim = () => {
 
         ],
         [
+            '.titik',
+            {opacity:[0, 1]}
+        ],
+        [
             '.pulse',
             {
                 opacity: [0, 1],
@@ -47,7 +51,7 @@ onMounted(() => {
             <p class="text">guna memberikan pengalaman pembayaran terbaik bagi pelanggan Anda. Terima kasih atas
                 perhatian dan waktu Anda.</p>
                 <div class="relative flex justify-center items-center ">
-                    <div class="absolute z-20 w-5 h-5 rounded-full bg-brand-300"></div>
+                    <div class="titik absolute z-20 w-5 h-5 rounded-full bg-brand-300 cursor-pointer"></div>
                     <Bullet class="pulse animate-ping  w-10 h-10" />
                 </div>
            
