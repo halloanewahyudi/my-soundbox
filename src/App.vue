@@ -3,8 +3,12 @@
 import { useRouter } from 'vue-router';
 import ArrowDown from './components/icons/ArrowDown.vue';
 import ArrowUp from './components/icons/ArrowUp.vue';
+
 import { animate, timeline } from 'motion';
 import { onMounted } from 'vue';
+import ArrowLeftCircle from './components/icons/ArrowLeftCircle.vue';
+import ArrowRightCircle from './components/icons/ArrowRightCircle.vue';
+
 
 
 const router = useRouter()
@@ -24,10 +28,10 @@ const nextPage = () => {
     <transition>
       <router-view></router-view>
     </transition>
-    <div class="fixed right-6 top-1/2 bottom-1/2 translate-y-1/2">
-      <div class="w-8 flex flex-col gap-3">
-        <ArrowUp @click="prevPage" class="w-9 h-9" />
-        <ArrowDown @click="nextPage" class="w-9 h-9" />
+    <div class="fixed right-6 top-6">
+      <div class="w-max flex gap-3">
+        <ArrowLeftCircle @click="prevPage" class="w-9 h-9 cursor-pointer" />
+        <ArrowRightCircle @click="nextPage" class="w-9 h-9 cursor-pointer" />
       </div>
     </div>
   </main>
