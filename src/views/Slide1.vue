@@ -29,9 +29,9 @@ onMounted(() => {
   <div class="slide-1">
     <slide :bg="bgImage">
       <div class="flex flex-col gap-6">
-        <BigTitle class="anim" title="Selamat datang dalam presentasi penjualan QRIS Soundbox" />
+        <BigTitle class="anim" title="Solusi pembayaran digital modern yang dirancang untuk memudahkan dan mengamankan setiap transaksi bisnis Anda." />
         <p class="anim">
-          solusi pembayaran digital modern yang dirancang untuk memudahkan dan mengamankan setiap transaksi bisnis Anda.
+          
           QRIS Soundbox adalah inovasi terbaru dalam teknologi pembayaran yang menggabungkan keunggulan QR code dengan
           notifikasi suara real-time. <span class="go text-orange-500 font-semibold inline-flex items-center gap-2 cursor-pointer group " @click="$router.push({ name:'Slide 2'})"> Go <ArrowRight class="group-hover:translate-x-2 duration-300" /> </span>
         </p>

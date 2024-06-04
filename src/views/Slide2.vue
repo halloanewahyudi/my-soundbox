@@ -29,9 +29,9 @@ onMounted(() => {
   <div class="slide-2">
   <slide :bg="bgImage">
     <div class="flex flex-col gap-6">
-      <BigTitle class="anim" title="Dalam presentasi ini, kami akan membahas berbagai aspek dari QRIS Soundbox" />
+      <BigTitle class="anim" title="Mulai dari fitur dan keunggulannya, kemudahan penggunaan, keamanan yang ditawarkan, hingga manfaat yang dapat diperoleh bagi bisnis Anda." />
       <p class="anim">
-        mulai dari fitur dan keunggulannya, kemudahan penggunaan, keamanan yang ditawarkan, hingga manfaat yang dapat diperoleh bagi bisnis Anda. Kami juga akan menyajikan studi kasus dan testimoni dari pengguna yang telah merasakan langsung manfaat dari QRIS Soundbox. <span class="go text-orange-500 font-semibold inline-flex items-center gap-2 cursor-pointer group " @click="$router.push({ name:'Slide 3'})"> Go <ArrowRight class="group-hover:translate-x-2 duration-300" /> </span>
+         Kami juga akan menyajikan studi kasus dan testimoni dari pengguna yang telah merasakan langsung manfaat dari QRIS Soundbox. <span class="go text-orange-500 font-semibold inline-flex items-center gap-2 cursor-pointer group " @click="$router.push({ name:'Slide 3'})"> Go <ArrowRight class="group-hover:translate-x-2 duration-300" /> </span>
       </p>
     </div>
   </slide>
